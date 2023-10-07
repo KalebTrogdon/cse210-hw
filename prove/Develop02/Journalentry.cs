@@ -9,6 +9,7 @@ class JournalEntry
 
     public JournalEntry(string prompt, string response, string date)
     {
+        // Initialize the properties of the JournalEntry.
         Prompt = prompt;
         Response = response;
         Date = date;
@@ -16,6 +17,7 @@ class JournalEntry
 
     public void DisplayEntry()
     {
+        // Display the date, prompt, and response of a journal entry.
         Console.WriteLine($"Date: {Date}");
         Console.WriteLine($"Prompt: {Prompt}");
         Console.WriteLine($"Response: {Response}");
@@ -23,6 +25,7 @@ class JournalEntry
 
     public void SaveEntry(StreamWriter writer)
     {
+        // Write the date, prompt, and response to a StreamWriter.
         writer.WriteLine($"{Date},{Prompt},{Response}");
     }
 }

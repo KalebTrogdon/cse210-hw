@@ -8,6 +8,7 @@ class Journal
 
     public void WriteNewEntry()
     {
+        // Generate a random prompt for the new journal entry.
         Console.WriteLine("Generating a random prompt...");
         string randomPrompt = GetRandomPrompt();
         Console.WriteLine($"Prompt: {randomPrompt}");
@@ -15,6 +16,7 @@ class Journal
         string response = Console.ReadLine();
         string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
+        // Create a new JournalEntry and add it to the journalEntries list.
         JournalEntry newEntry = new JournalEntry(randomPrompt, response, date);
         journalEntries.Add(newEntry);
 
@@ -29,6 +31,7 @@ class Journal
             return;
         }
 
+        // Display all existing journal entries.
         Console.WriteLine("Journal Entries:");
         foreach (var entry in journalEntries)
         {
@@ -39,15 +42,18 @@ class Journal
 
     public void SaveJournal()
     {
+        // Prompt the user to enter a file name to save the journal.
         Console.Write("Enter a file name to save the journal: ");
         string fileName = Console.ReadLine();
 
         try
         {
+            // Create a StreamWriter to write journal entries to the specified file.
             using (StreamWriter writer = new StreamWriter(fileName))
             {
                 foreach (var entry in journalEntries)
                 {
+                    // Call the SaveEntry method of each entry to save it to the file.
                     entry.SaveEntry(writer);
                 }
             }
@@ -62,6 +68,7 @@ class Journal
 
     public void LoadJournal()
     {
+        // Prompt the user to enter a file name to load the journal.
         Console.Write("Enter a file name to load the journal: ");
         string fileName = Console.ReadLine();
 
@@ -71,6 +78,7 @@ class Journal
 
             try
             {
+                // Read journal entries from the specified file and add them to the list.
                 using (StreamReader reader = new StreamReader(fileName))
                 {
                     while (!reader.EndOfStream)
@@ -102,6 +110,7 @@ class Journal
 
     private string GetRandomPrompt()
     {
+        // Array of prompts for generating random prompts.
         string[] prompts = {
             "Who was the most interesting person I interacted with today?",
             "What was the best part of my day?",
@@ -110,6 +119,7 @@ class Journal
             "If I had one thing I could do over today, what would it be?"
         };
 
+        // Generate a random index and return a random prompt.
         Random random = new Random();
         int index = random.Next(prompts.Length);
         return prompts[index];
