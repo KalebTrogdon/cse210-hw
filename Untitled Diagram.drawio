@@ -1,53 +1,88 @@
-<mxfile host="app.diagrams.net" modified="2023-10-04T00:37:49.254Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="dI8MimEujaAgME9yICTV" version="22.0.2" type="github">
-  <diagram name="Page-1" id="2Qi8IFqG3rLnZkeUcf8k">
-    <mxGraphModel dx="543" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2023-10-12T19:34:42.962Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="begNTHEsWvIRYEqA5mx6" version="22.0.4" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1221" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-1" value="input" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="280" width="160" height="260" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-DzAwlbV7Cr3BW1uQROi-0" target="-DzAwlbV7Cr3BW1uQROi-32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-2" value="&lt;div&gt;name entry:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Current date:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;save input to questions to sheet if different dates on file save to new sheet:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-1">
-          <mxGeometry y="26" width="160" height="124" as="geometry" />
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-0" value="Program" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="160" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-1">
-          <mxGeometry y="150" width="160" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-4" value="&lt;div&gt;Write inputs to sheet named after current date:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-1">
-          <mxGeometry y="158" width="160" height="102" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-5" value="Output" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="280" width="160" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-6" value="prompt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-5">
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-21" value="Display Scripture random" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-0">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-5">
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-30" value="Add new scripture" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-0">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-1" value="&lt;div&gt;Quit program&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-0">
+          <mxGeometry y="78" width="160" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-0">
+          <mxGeometry y="106" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-3" value="&lt;div&gt;call scripture&lt;/div&gt;&lt;div&gt;call add scrpiture&lt;/div&gt;&lt;div&gt;call terminaiton&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-0">
+          <mxGeometry y="114" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.838;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="-DzAwlbV7Cr3BW1uQROi-0" source="-DzAwlbV7Cr3BW1uQROi-0" target="-DzAwlbV7Cr3BW1uQROi-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-8" value="Memorize" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="540" y="10" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-9" value="&lt;div&gt;Hide words&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-8">
+          <mxGeometry y="26" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-23" value="Clear blank words" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-8">
+          <mxGeometry y="50" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-24" value="Exit scripture" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-8">
+          <mxGeometry y="76" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-8">
+          <mxGeometry y="102" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-11" value="&lt;div&gt;eliminate random words &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;call deleted words &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Call back program&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-8">
+          <mxGeometry y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-DzAwlbV7Cr3BW1uQROi-16" target="-DzAwlbV7Cr3BW1uQROi-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-16" value="Scriptures" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="254" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-17" value="contains X amount of scripture to pull from" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-16">
+          <mxGeometry y="26" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-16">
+          <mxGeometry y="60" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-19" value="Random pull from string (scripture)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-16">
+          <mxGeometry y="68" width="160" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-DzAwlbV7Cr3BW1uQROi-21" target="-DzAwlbV7Cr3BW1uQROi-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-31" value="Add to scripture" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="254" y="146" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-32" value="Write to list of scriptures" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-31">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-31">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-8" value="Questions:&lt;ul&gt;&lt;li&gt;Who was the most interesting person I interacted with today?&lt;/li&gt;&lt;li&gt;What was the best part of my day?&lt;/li&gt;&lt;li&gt;How did I see the hand of the Lord in my life today?&lt;/li&gt;&lt;li&gt;What was the strongest emotion I felt today?&lt;/li&gt;&lt;li&gt;If I had one thing I could do over today, what would it be?&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-5">
-          <mxGeometry y="60" width="160" height="300" as="geometry" />
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-34" value="+ method(type): write and save to string (Scripture)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-31">
+          <mxGeometry y="60" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-9" value="Journal" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="370" y="50" width="110" height="50" as="geometry" />
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-36" value="&lt;div align=&quot;left&quot;&gt;So in this, we will be having a main program that leads to a sub-program which then pulls from a list of scriptures. We are also adding a way to add new scriptures that can be memorized. We will implement a csv file to be able to hold all the scriptures and references.&lt;br&gt;&lt;/div&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry y="246" width="790" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HPmoDI7nwJhzhmG3isZV-2" target="HPmoDI7nwJhzhmG3isZV-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-22" value="Menu" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="280" width="160" height="570" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-23" value="&lt;div&gt;Display Menu Options&lt;/div&gt;&lt;div&gt;User Selects option 1-5&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;1: Write a new entry&lt;/div&gt;&lt;div&gt;2: Display journal&lt;/div&gt;&lt;div&gt;3:Save journal&lt;/div&gt;&lt;div&gt;4: load journal&lt;/div&gt;&lt;div&gt;5: Exit&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-22">
-          <mxGeometry y="26" width="160" height="134" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-22">
-          <mxGeometry y="160" width="160" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-25" value="&lt;div&gt;1: Write a new entry&lt;/div&gt;&lt;div&gt;*Generate prompt&lt;/div&gt;&lt;div&gt;*prompt user&lt;/div&gt;&lt;div&gt;*Save entry (prompt, response, and date)&lt;/div&gt;&lt;div&gt;2: Display journal&lt;/div&gt;&lt;div&gt;*list entries&lt;/div&gt;&lt;div&gt;*display entries (prompt, response, and date)&lt;/div&gt;&lt;div&gt;3: Save journal&lt;/div&gt;&lt;div&gt;*prompt user for file name&lt;/div&gt;&lt;div&gt;*save journal entry to file name provided&lt;/div&gt;&lt;div&gt;4: Load journal&lt;/div&gt;&lt;div&gt;*list all journals&lt;/div&gt;&lt;div&gt;*prompt for specific file&lt;/div&gt;&lt;div&gt;*load prompted journal&lt;/div&gt;&lt;div&gt;5: Exit program&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HPmoDI7nwJhzhmG3isZV-22">
-          <mxGeometry y="168" width="160" height="402" as="geometry" />
-        </mxCell>
-        <mxCell id="HPmoDI7nwJhzhmG3isZV-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="HPmoDI7nwJhzhmG3isZV-23" target="HPmoDI7nwJhzhmG3isZV-2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="-DzAwlbV7Cr3BW1uQROi-37" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="-DzAwlbV7Cr3BW1uQROi-36">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-790" y="-30" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
