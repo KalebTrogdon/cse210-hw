@@ -20,21 +20,20 @@ public class Scripture
 
     public void RemoveRandomWordAndLeaveFirstLetter()
     {
-    Random random = new Random();
-    var visibleWords = Words.Where(word => !word.IsHidden).ToList();
+        Random random = new Random();
+        var visibleWords = Words.Where(word => !word.IsHidden).ToList();
 
-    if (visibleWords.Count > 0)
-    {
-        int randomIndex = random.Next(visibleWords.Count);
-        Word wordToRemove = visibleWords[randomIndex];
-        wordToRemove.RemoveWordAndLeaveFirstLetter();
+        if (visibleWords.Count > 0)
+        {
+            int randomIndex = random.Next(visibleWords.Count);
+            Word wordToRemove = visibleWords[randomIndex];
+            wordToRemove.RemoveWordAndLeaveFirstLetter();
+        }
     }
-}
-
 
     public override string ToString()
     {
-        string scriptureText = string.Join(" ", Words.Select(word => word.IsHidden ? "____" : word.Text));
+        string scriptureText = string.Join(" ", Words.Select(word => word.IsHidden ? word.FirstLetter + new string('_', word.RestOfWord.Length) : word.FirstLetter + word.RestOfWord));
         return $"{Reference.Verse}: {scriptureText}";
     }
 }
