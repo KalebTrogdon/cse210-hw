@@ -24,7 +24,7 @@ class MindfulnessActivity
     {
         Console.WriteLine("Good job! You've completed the activity.");
         Console.WriteLine($"Activity: {name}");
-        Console.WriteLine("Duration: [Show duration here]");
+        Console.WriteLine("Duration: seconds");
         Thread.Sleep(3000);
     }
 }
