@@ -1,6 +1,5 @@
 using System;
 using System.Threading;
-using System.Diagnostics;
 
 class BreathingActivity : MindfulnessActivity
 {
@@ -12,22 +11,10 @@ class BreathingActivity : MindfulnessActivity
     {
         base.Start(duration);
 
-        var stopwatch = new Stopwatch();
-        stopwatch.Start();
-
-        while (stopwatch.Elapsed.TotalSeconds < duration)
-        {
-            Console.WriteLine("Breathe in...");
-            Thread.Sleep(4000);
-
-            if (stopwatch.Elapsed.TotalSeconds >= duration)
-                break;
-
-            Console.WriteLine("Breathe out...");
-            Thread.Sleep(4000);
-        }
-
-        stopwatch.Stop();
-        End();
+        // Breathing activity specific code
+        Console.WriteLine("Breathe in...");
+        Thread.Sleep(3000); // Simulated "Breathe in" for 3 seconds
+        Console.WriteLine("Breathe out...");
+        Thread.Sleep(3000); // Simulated "Breathe out" for 3 seconds
     }
 }

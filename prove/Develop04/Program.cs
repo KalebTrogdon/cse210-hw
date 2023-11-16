@@ -6,54 +6,42 @@ class Program
     {
         while (true)
         {
-            Console.WriteLine("Mindfulness Program\n");
+            Console.WriteLine("Mindfulness Activities Menu:");
             Console.WriteLine("1. Breathing Activity");
-            Console.WriteLine("2. Reflection Activity");
-            Console.WriteLine("3. Listing Activity");
-            Console.WriteLine("4. Quit");
+            Console.WriteLine("2. Reflection Activity (not implemented)");
+            Console.WriteLine("3. Listing Activity (not implemented)");
+            Console.WriteLine("4. Exit");
 
             Console.Write("Choose an activity (1-4): ");
             string choice = Console.ReadLine();
 
-            if (choice == "4")
+            switch (choice)
             {
-                break;
+                case "1":
+                    PerformBreathingActivity();
+                    break;
+                case "2":
+                    Console.WriteLine("Reflection Activity (not implemented)");
+                    break;
+                case "3":
+                    Console.WriteLine("Listing Activity (not implemented)");
+                    break;
+                case "4":
+                    Console.WriteLine("Exiting program. Goodbye!");
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice. Please enter a number between 1 and 4.");
+                    break;
             }
 
-            if (int.TryParse(choice, out int activityChoice) && activityChoice >= 1 && activityChoice <= 3)
-            {
-                Console.Write("Enter duration (in seconds): ");
-                if (int.TryParse(Console.ReadLine(), out int duration))
-                {
-                    MindfulnessActivity activity = null;
-
-                    switch (activityChoice)
-                    {
-                        case 1:
-                            activity = new BreathingActivity();
-                            break;
-                        case 2:
-                            activity = new ReflectionActivity();
-                            break;
-                        case 3:
-                            activity = new ListingActivity();
-                            break;
-                    }
-
-                    if (activity != null)
-                    {
-                        activity.Start(duration);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Invalid duration input. Please enter a valid number of seconds.");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid choice. Please choose an activity by entering a number (1-3) or Quit (4).");
-            }
+            Console.WriteLine();
         }
+    }
+
+    static void PerformBreathingActivity()
+    {
+        BreathingActivity breathingActivity = new BreathingActivity();
+        breathingActivity.Start(10); // Start the breathing activity for 10 seconds
+        breathingActivity.End(10);
     }
 }
