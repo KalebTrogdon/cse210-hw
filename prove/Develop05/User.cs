@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 public class User
 {
     private List<Goal> goals;
@@ -13,16 +11,27 @@ public class User
 
     public void CreateGoal(Goal goal)
     {
-        // Logic to add a new goal to the user's list
+        goals.Add(goal);
     }
 
     public void RecordEvent(Goal goal)
     {
-        // Logic to record an event for a specific goal
+        goal.RecordEvent();
+        totalPoints += goal.BasePoints; // Use the BasePoints property
     }
 
     public void DisplayGoals()
     {
-        // Logic to display a list of user's goals and their progress
+        foreach (var goal in goals)
+        {
+            goal.DisplayProgress();
+        }
+
+        Console.WriteLine($"Total Points: {totalPoints}");
+    }
+
+    public Goal GetGoalByName(string goalName)
+    {
+        return goals.Find(g => g.Name.Equals(goalName, StringComparison.OrdinalIgnoreCase));
     }
 }

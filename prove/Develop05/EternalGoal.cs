@@ -1,15 +1,14 @@
+using System;
+
 public class EternalGoal : Goal
 {
-    private int eventPoints;
-
-    public EternalGoal(string name, int eventPoints)
-        : base(name)
+    public EternalGoal(string name) : base(name, 1000)
     {
-        this.eventPoints = eventPoints;
     }
 
     public override void DisplayProgress()
     {
-        // Logic to display progress for eternal goals
+        base.DisplayProgress();
+        // Additional logic specific to EternalGoal progress display
     }
 }

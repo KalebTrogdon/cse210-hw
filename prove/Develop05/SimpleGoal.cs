@@ -1,15 +1,14 @@
+using System;
+
 public class SimpleGoal : Goal
 {
-    private int completionPoints;
-
-    public SimpleGoal(string name, int completionPoints)
-        : base(name)
+    public SimpleGoal(string name) : base(name, 10)
     {
-        this.completionPoints = completionPoints;
     }
 
     public override void DisplayProgress()
     {
-        // Logic to display progress for simple goals
+        base.DisplayProgress();
+        // Additional logic specific to SimpleGoal progress display
     }
 }

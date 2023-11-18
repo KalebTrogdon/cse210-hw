@@ -1,3 +1,5 @@
+using System;
+
 public class ChecklistGoal : Goal
 {
     private int singleEventPoints;
@@ -5,7 +7,7 @@ public class ChecklistGoal : Goal
     private int bonusPoints;
 
     public ChecklistGoal(string name, int singleEventPoints, int targetEvents, int bonusPoints)
-        : base(name)
+        : base(name, 500)
     {
         this.singleEventPoints = singleEventPoints;
         this.targetEvents = targetEvents;
@@ -14,6 +16,7 @@ public class ChecklistGoal : Goal
 
     public override void DisplayProgress()
     {
-        // Logic to display progress for checklist goals
+        base.DisplayProgress();
+        // Additional logic specific to ChecklistGoal progress display
     }
 }
