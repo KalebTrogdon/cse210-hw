@@ -1,9 +1,9 @@
-using System;
-
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello FinalProject World!");
+        Game game = new Game();
+        game.StartGame();
     }
 }
+
