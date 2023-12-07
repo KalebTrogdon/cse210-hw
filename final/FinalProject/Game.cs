@@ -1,24 +1,21 @@
+// Game.cs
 using System;
 using System.Collections.Generic;
 
-// Game class to manage the overall game flow
 public class Game
 {
     public List<Character> Characters { get; set; }
 
-    // Constructor
     public Game()
     {
         Characters = new List<Character>();
     }
 
-    // Method to add characters to the game
     public void AddCharacter(Character character)
     {
         Characters.Add(character);
     }
 
-    // Method to display information about all characters
     public void DisplayCharactersInfo()
     {
         foreach (var character in Characters)
@@ -28,7 +25,6 @@ public class Game
         }
     }
 
-    // Method to simulate the game's progression
     public void PlayGame()
     {
         Console.WriteLine("Welcome to Chronicles of the Lost Realm!\n");
@@ -38,70 +34,80 @@ public class Game
             character.PerformAction();
         }
 
-        // Branching scenario
-        Console.WriteLine("\nYou find yourself at a crossroads. What will you do?");
-        DisplayChoices();
-
-        int userChoice;
-        while (!int.TryParse(Console.ReadLine(), out userChoice) || userChoice < 1 || userChoice > 10)
-        {
-            Console.WriteLine("Invalid choice. Please enter a number between 1 and 10.");
-        }
-
-        // Handle user's choice
-        ProcessUserChoice(userChoice);
+        StartMysteriousNoiseScenario();
     }
 
-    // Display available choices
-    private void DisplayChoices()
+    private void StartMysteriousNoiseScenario()
     {
-        Console.WriteLine("1. Explore the dark forest.");
-        Console.WriteLine("2. Enter the mysterious cave.");
-        Console.WriteLine("3. Head towards the ancient ruins.");
-        Console.WriteLine("4. Climb the mountain path.");
-        Console.WriteLine("5. Take a detour through the swamp.");
-        Console.WriteLine("6. Investigate the abandoned village.");
-        Console.WriteLine("7. Follow the river downstream.");
-        Console.WriteLine("8. Ascend the hidden staircase.");
-        Console.WriteLine("9. Cross the bridge to the enchanted land.");
-        Console.WriteLine("10. Rest and camp for the night.");
-    }
+        Console.Write("# What is your name? ");
+        string name = Console.ReadLine();
+        Console.WriteLine($"~ Hello, {name}! Welcome to our story.");
 
-    // Process user's choice
-    private void ProcessUserChoice(int userChoice)
-    {
-        switch (userChoice)
+        Console.WriteLine("It begins on a cold rainy night. You're sitting in your room and hear a noise coming from down the hall. Do you go investigate?");
+        Console.Write("# Type YES or NO: ");
+        string noiseChoice = Console.ReadLine().ToUpper();
+
+        if (noiseChoice == "YES")
         {
-            case 1:
-                Console.WriteLine("You venture into the dark forest and encounter a hidden treasure!");
-                break;
-            case 2:
-                Console.WriteLine("You enter the mysterious cave and face a fierce monster!");
-                break;
-            case 3:
-                Console.WriteLine("You explore the ancient ruins and discover a forgotten artifact!");
-                break;
-            case 4:
-                Console.WriteLine("You climb the mountain path and witness a breathtaking view!");
-                break;
-            case 5:
-                Console.WriteLine("You take a detour through the swamp and encounter mysterious creatures!");
-                break;
-            case 6:
-                Console.WriteLine("You investigate the abandoned village and find a helpful ally!");
-                break;
-            case 7:
-                Console.WriteLine("You follow the river downstream and discover a hidden waterfall!");
-                break;
-            case 8:
-                Console.WriteLine("You ascend the hidden staircase and reach a magical realm!");
-                break;
-            case 9:
-                Console.WriteLine("You cross the bridge to the enchanted land and meet mystical beings!");
-                break;
-            case 10:
-                Console.WriteLine("You rest and camp for the night, rejuvenating your energy.");
-                break;
+            Console.WriteLine("You walk into the hallway and see a light coming from under a door down the hall.");
+            Console.WriteLine("You walk towards it. Do you open it or knock?");
+            Console.Write("# Type OPEN or KNOCK: ");
+            string doorChoice = Console.ReadLine().ToUpper();
+
+            if (doorChoice == "KNOCK")
+            {
+                Console.WriteLine("A voice behind the door speaks. It says, \"Answer this riddle:\"");
+                Console.WriteLine("\"Poor people have it. Rich people need it. If you eat it you die. What is it?\"");
+                Console.Write("# Type your answer: ");
+                string riddleAnswer = Console.ReadLine().ToUpper();
+
+                if (riddleAnswer == "NOTHING")
+                {
+                    Console.WriteLine("The door opens and NOTHING is there.");
+                    Console.WriteLine("You turn off the light and run back to your room and lock the door.");
+                }
+                else
+                {
+                    Console.WriteLine("You answered incorrectly. The door doesn't open.");
+                }
+            }
+            else if (doorChoice == "OPEN")
+            {
+                Console.WriteLine("The door is locked! See if one of your three keys will open it.");
+                Console.Write("# Enter a number (1-3): ");
+                string keyChoice = Console.ReadLine();
+
+                switch (keyChoice)
+                {
+                    case "1":
+                        Console.WriteLine("You choose the first key. Lucky choice!");
+                        Console.WriteLine("The door opens and NOTHING is there. Strange...");
+                        break;
+                    case "2":
+                        Console.WriteLine("You choose the second key. The door doesn't open");
+                        break;
+                    case "3":
+                        Console.WriteLine("You choose the third key. The door doesn't open");
+                        break;
+                    default:
+                        Console.WriteLine("~ Incorrect input! The story ends here...");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("~ Incorrect input! The story ends here...");
+            }
         }
+        else
+        {
+            if (noiseChoice != "NO")
+            {
+                Console.WriteLine("~ Incorrect input! We consider it as a NO.");
+            }
+            Console.WriteLine("Not much of an adventure if we don't leave our room!");
+        }
+
+        Console.WriteLine("THE END");
     }
 }
